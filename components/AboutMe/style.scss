@@ -1,0 +1,21 @@
+$break-mid: 1000px;
+
+.about-me {
+	@media screen and (max-height: $break-mid) {
+		padding-top: 10px;
+		flex-direction: column;
+	}
+
+	display: flex;
+	padding-top: 100px;
+
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+.about-me--my-description {
+	max-width: 350px;
+}

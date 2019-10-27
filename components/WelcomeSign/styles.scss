@@ -1,0 +1,31 @@
+.welcome-sign--page {
+	width: 100%;
+	height: 100%;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+}
+
+.welcome-sign--text {
+	grid-area: 2 / 2 / 4 / 4;
+	font-size: 25px;
+	width:auto;
+	.welcome-sign--name {
+	}
+	.welcome-sign--job-title {
+	}
+}
+.welcome-sign--particles{
+
+	grid-area: 2 / 3 / 4 / 5;
+}
+.div1 {
+}
+.div2 {
+	grid-area: 2 / 2 / 4 / 3;
+}
+.div3 {
+	grid-area: 2 / 2 / 4 / 4;
+}

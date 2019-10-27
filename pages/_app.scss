@@ -1,0 +1,78 @@
+/* @import '~antd/dist/antd.css'; */
+/* @import './~inter/inter-hinted.css'; */
+
+:root {
+	font-display: unset;
+	font-family: 'Inter';
+}
+.noselect {
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+.shadow {
+	box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
+}
+.projects--list {
+	padding-top: 10px;
+	width: 350px;
+	overflow-y: auto;
+	height: 90vh;
+}
+.projects--page {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.code {
+	background: #f4f4f4;
+	border-radius: 5px;
+	border: 1px solid #ddd;
+	border-left: 3px solid #1890ff;
+	color: #666;
+	page-break-inside: avoid;
+	font-family: monospace;
+	max-width: auto;
+	overflow: auto;
+	padding: 2px;
+	display: block;
+	word-wrap: break-word;
+}
+.section--title {
+	font-size: 25px;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-bottom: 1px solid #3a3a3a38;
+	width: 100%;
+	margin-bottom: 10px;
+}
+.noselect {
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+.img {
+	display: block;
+	max-width: 300px;
+	max-height: 200px;
+	width: auto;
+	height: auto;
+}
+.project-card--content {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.project--card-confidential {
+	font-size: 13px;
+	font-weight: 500;
+	text-transform: uppercase;
+}

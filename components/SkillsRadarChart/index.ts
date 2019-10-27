@@ -1,0 +1,1 @@
+export {default as SkillsRadarChart} from './controller';
