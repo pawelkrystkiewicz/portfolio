@@ -26,7 +26,7 @@ export default <Array<PageAttributes>>[
 		className: 'nav-text',
 		title: 'Skills',
 		path: '/skills',
-		breadcrumbName: 'skills'
+		breadcrumbName: 'Skills'
 	},
 
 	{

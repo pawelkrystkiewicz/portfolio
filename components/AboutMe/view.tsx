@@ -2,7 +2,7 @@ import React from 'react';
 import './style.scss';
 import { JobTimeline } from '../JobTimeline';
 import Particles from '../Particles';
-
+import { useMedia } from 'react-use';
 const history = [
 	{
 		company: '4LS',
@@ -35,9 +35,12 @@ const Description = () => (
 	</div>
 );
 
-export default (props) => (
-	<div className="about-me">
-		<Description />
-		<Particles />
-	</div>
-);
+export default (props) => {
+	const isWide = useMedia('(min-width: 845px)');
+	return (
+		<div className="about-me">
+			<Description />
+			{!!isWide && <Particles />}
+		</div>
+	);
+};
