@@ -1,8 +1,7 @@
 import dynamic from 'next/dynamic';
 import React from 'react';
-import { HorizontalBar } from 'react-chartjs-2';
-import './styles.scss';
 import { Radar } from 'react-chartjs-2';
+import './styles.scss';
 const NoSsr = (props) => <React.Fragment>{props.children}</React.Fragment>;
 
 const NOSSR = dynamic(() => Promise.resolve(NoSsr), {

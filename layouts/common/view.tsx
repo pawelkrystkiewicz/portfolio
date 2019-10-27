@@ -33,7 +33,7 @@ const drawerIconStyle: React.CSSProperties = {
 export default (props: React.PropsWithChildren<any>) => {
 	const router = useRouter();
 	const isWide = useMedia('(min-width: 845px)');
-	let currentPath: PageAttributes = menu.filter((element) => element.path === router.pathname)[0];
+	let currentPath: PageAttributes = menu.filter(({ path }) => path === router.pathname)[0];
 
 	const [ state, setState ] = useState({ open: false });
 
@@ -64,22 +64,20 @@ export default (props: React.PropsWithChildren<any>) => {
 				width={80}
 				title={<img src={'/static/img/logo.svg'} style={{ height: 40 }} />}
 				placement="left"
-				mask={false}
+				mask={true}
 				closable={false}
 				onClose={closeDrawer}
 				visible={state.open}
 			>
 				{menu.map(({ iconType, key, title, path }) => (
 					<Tooltip placement="right" title={title}>
+						{console.log(router.pathname, path)}
 						<Icon
 							key={key}
 							className="layout--menu-icon"
-							theme={currentPath.path === path ? 'twoTone' : 'outlined'}
+							theme={router.pathname === path ? 'twoTone' : 'outlined'}
 							type={iconType}
-							onClick={() => {
-								Router.push(path);
-								// closeDrawer();
-							}}
+							onClick={() => Router.push(path)}
 						/>
 					</Tooltip>
 				))}
