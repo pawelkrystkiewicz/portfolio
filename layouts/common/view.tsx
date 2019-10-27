@@ -1,13 +1,13 @@
+import definitions from '@routes/definitions';
+import { PageAttributes } from '@routes/interface';
 import { Breadcrumb, Drawer, Icon, Layout, Tooltip } from 'antd';
-import getConfig from 'next/config';
 import Router, { useRouter } from 'next/router';
 import React, { useState } from 'react';
-import { PageAttributes } from '@routes/interface';
-import definitions from '@routes/definitions';
-import './styles.scss';
 import { useMedia } from 'react-use';
+import './styles.scss';
 
-const { publicRuntimeConfig: { STATIC_DIR } } = getConfig();
+const STATIC_DIR = '/static';
+
 const { Content, Footer } = Layout;
 const menu = definitions;
 
@@ -71,7 +71,6 @@ export default (props: React.PropsWithChildren<any>) => {
 			>
 				{menu.map(({ iconType, key, title, path }) => (
 					<Tooltip placement="right" title={title}>
-						{console.log(router.pathname, path)}
 						<Icon
 							key={key}
 							className="layout--menu-icon"
@@ -84,7 +83,7 @@ export default (props: React.PropsWithChildren<any>) => {
 			</Drawer>
 
 			<Layout style={{ background: '#fff' }} onClick={closeDrawer}>
-				{!!currentPath.renderInContent ? (
+				{!!currentPath && !!currentPath.path && currentPath.path !== '/' ? (
 					<ContentComponent currentPath={currentPath}>{props.children}</ContentComponent>
 				) : (
 					props.children

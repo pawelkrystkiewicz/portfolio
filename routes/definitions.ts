@@ -37,14 +37,5 @@ export default <Array<PageAttributes>>[
 		title: 'About me',
 		path: '/about',
 		breadcrumbName: 'About me'
-	},
-	// {
-	// 	key: 5,
-	// 	renderInContent: true,
-	// 	iconType: 'idcard',
-	// 	className: 'nav-text',
-	// 	title: 'Contact',
-	// 	path: '/contact',
-	// 	breadcrumbName: 'Contact'
-	// }
+	}
 ];

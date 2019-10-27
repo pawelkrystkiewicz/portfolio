@@ -11,13 +11,11 @@ interface IJobTImeline {
 	content: any;
 }
 
-
-
 export default ({ history }) => (
 	<div className="jobtimeline">
 		<Timeline>
 			{history.map(({ content, position, company }: IJobTImeline) => (
-				<Timeline.Item>
+				<Timeline.Item key={company}>
 					<div>
 						<span className="jobtimeline--company">{company}</span>&nbsp;
 						<span className="jobtimeline--position">{position}</span>
