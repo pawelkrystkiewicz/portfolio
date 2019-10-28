@@ -1,0 +1,30 @@
+$break-mid: 850px;
+
+.contact-me {
+	@media screen and (max-width: $break-mid) {
+		flex-direction: column;
+	}
+
+	display: flex;
+	padding-top: 10px;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+.contact-me--particles {
+	margin-top: 80px;
+}
+.contact-me--my-description {
+	@media screen and (max-width: $break-mid) {
+		max-width: 350px;
+	}
+}
+
+.contact-me--icons {
+	display: flex;
+	flex-direction: column;
+}
+
+.contact-me--icon {
+	margin-bottom: 5px;
+}

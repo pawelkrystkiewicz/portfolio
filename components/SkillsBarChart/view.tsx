@@ -15,7 +15,7 @@ const data = {
 	legend: { display: false, position: 'bottom' },
 	datasets: [
 		{
-			label: 'Proficiency in technology',
+			label: 'Arbitrary mark',
 			backgroundColor: 'rgba(24, 144, 255, .2)',
 			borderColor: '#1890ff',
 			borderWidth: 1,
@@ -28,7 +28,8 @@ const data = {
 
 export default (props) => (
 	<div className="skill-card-common">
-		<p>Arbitrary classification of proficiency in known technolgies</p>
+		<p>Proficiency in known technolgies</p>
+
 		<NOSSR>
 			<HorizontalBar data={data} />
 		</NOSSR>

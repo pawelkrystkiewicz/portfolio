@@ -1,9 +1,6 @@
-import { Timeline, Icon } from 'antd';
+import { Timeline } from 'antd';
 import './style.scss';
 
-interface JobTImelineProps {
-	history: IJobTImeline[];
-}
 
 interface IJobTImeline {
 	position: string;

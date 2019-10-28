@@ -1,0 +1,22 @@
+[
+	{
+		"name": "LinkedIn",
+		"link": "https://www.linkedin.com/in/pawelkrystkiewicz/",
+		"icon": "linkedin"
+	},
+	{
+		"name": "Github",
+		"link": "https://github.com/pawelkrystkiewicz",
+		"icon": "github"
+	},
+	{
+		"name": "Messenger",
+		"link": "https://www.messenger.com/t/pawelhkrystkiewicz",
+		"icon": "message"
+	},
+	{
+		"name": "Facebook",
+		"link": "https://www.facebook.com/pawelhkrystkiewicz",
+		"icon": "facebook"
+	}
+]

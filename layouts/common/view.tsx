@@ -5,7 +5,7 @@ import Router, { useRouter } from 'next/router';
 import React, { useState } from 'react';
 import { useMedia } from 'react-use';
 import './styles.scss';
-
+import Link from 'next/link';
 const STATIC_DIR = '/static';
 
 const { Content, Footer } = Layout;
@@ -61,25 +61,39 @@ export default (props: React.PropsWithChildren<any>) => {
 				</span>
 			)}
 			<Drawer
-				width={80}
-				title={<img src={'/static/img/logo.svg'} style={{ height: 40 }} />}
+				width={'auto'}
+				title={
+					<span style={{ margin: '0 auto' }} onClick={() => Router.push('/')}>
+						<img src={'/static/img/logo.svg'} style={{ height: 40 }} />
+					</span>
+				}
 				placement="left"
 				mask={true}
 				closable={false}
 				onClose={closeDrawer}
 				visible={state.open}
 			>
-				{menu.map(({ iconType, key, title, path }) => (
-					<Tooltip placement="right" title={title}>
-						<Icon
-							key={key}
-							className="layout--menu-icon"
-							theme={router.pathname === path ? 'twoTone' : 'outlined'}
-							type={iconType}
-							onClick={() => Router.push(path)}
-						/>
-					</Tooltip>
-				))}
+				<div className="layout--drawer-menu">
+					{menu.map(({ iconType, key, title, path }) => (
+						<Tooltip placement="right" title={title} trigger="hover">
+							<Icon
+								key={key}
+								className="layout--menu-icon"
+								style={{ fontSize: 20 }}
+								theme={router.pathname === path ? 'twoTone' : 'outlined'}
+								type={iconType}
+								onClick={() => Router.push(path)}
+							/>
+							{isWide ? null : (
+								<Link href={path}>
+									<span style={{ color: router.pathname === path ? '#1890ff' : '#000' }}>
+										{title}
+									</span>
+								</Link>
+							)}
+						</Tooltip>
+					))}
+				</div>
 			</Drawer>
 
 			<Layout style={{ background: '#fff' }} onClick={closeDrawer}>

@@ -1,0 +1,94 @@
+[
+	{
+		"id": 1,
+		"title": "Fleet tracking",
+		"description": "Handy tool for logistics",
+		"type": "Fullstack",
+		"article": {
+			"content": "My first project that made it into production. It's a solution for the  mobile app data visualization. Key features are: displaying current geographical position of a driver dispatched with the mobile app, displaying route's trace and details about the route. Historical data is accessible in the similar way.",
+			"image": "/static/img/projects/fleet.png",
+			"stack": [ "js", "material-ui", "sass", "react", "graphql", "nodejs", "pg" ],
+			"confidential": true
+		}
+	},
+	{
+		"id": 2,
+		"title": "Order tracking",
+		"description": "Convinience for customer",
+		"type": "Fullstack",
+		"article": {
+			"content": "This project was created to aid company's clients in keeping their customers informed about what is being send in the package and the ETA on the delivery. All these infromations are available to the customer via link send in the SMS",
+			"image": "/static/img/projects/tracker.png",
+			"stack": [ "ts", "antd", "sass", "react", "graphql", "nodejs", "pg" ],
+			"confidential": true
+		}
+	},
+	{
+		"id": 6,
+		"title": "GraphQL microservices",
+		"description": "Powerful in-house technologies",
+		"type": "Backend",
+		"article": {
+			"image": "/static/img/projects/microservices.png",
+			"content": "Multiple projects - many different services of the kind that are a must-have in every company. By keeping each project simple, the company could minimize maintenance or upgrade time and focus on adding new modules to the ecosystem.",
+			"repository": "https://github.com/pawelkrystkiewicz/ts-typeorm-type-graphql-boilerplate",
+			"stack": [ "ts", "graphql", "nodejs", "redis", "pg" ],
+			"confidential": true
+		}
+	},
+	{
+		"id": 7,
+		"title": "Microservice task manager",
+		"description": "Redis powered queue",
+		"type": "Backend",
+		"article": {
+			"image": "/static/img/projects/tasker.png",
+			"content": "To fully utilize the advantages of the microservices it necessary have a tool that will manage the data flow and will order incoming requests into tasks. This way microservice task manager came to be. Service was developed with node.js GraphQL server armed with Redis based queue. Thanks to Redis' fast operations a powerful task managing service emerged. It is able to operate under high request intensity and remain responsive thanks to having a queue. Implementation of this service had simplified data flow in the company's products e.g. by having to request only one endpoint or having billing service being called at the end of every task automatically.",
+			"repository": "https://github.com/pawelkrystkiewicz/ts-bull-graphql-boilerplate",
+			"stack": [ "ts", "graphql", "nodejs", "redis", "pg" ],
+			"confidential": true
+		}
+	},
+	{
+		"id": 3,
+		"title": "This project",
+		"description": "How do you like it?",
+		"type": "Frontend",
+		"article": {
+			"content": "It came to be as a challenge to see how fast I can bring up coherent experience to the user from rough sketches to full site. Took about 30h to create.",
+			"image": "/static/img/projects/portfolio.png",
+			"repository": "https://github.com/pawelkrystkiewicz/portfolio",
+			"stack": [ "ts", "antd", "sass", "react", "next" ],
+			"url": "https://pawelkrystkiewicz.pl",
+			"confidential": false
+		}
+	},
+	{
+		"id": 4,
+		"title": "My first portfolio",
+		"description": "Well that was a mess...",
+		"type": "Frontend",
+		"article": {
+			"content": "Committed in October 2018 is a showcase of my beginner's skills at that time. In comparison, it shows how far have I come during last year. I'm proud of the contrast between the two that shows how fast learner I am. And that skill is something you can't underestimate.",
+			"image": "",
+			"repository": "https://github.com/pawelkrystkiewicz/pawelkrystkiewicz.github.io",
+			"stack": [ "js", "css", "html" ],
+			"url": "https://pawelkrystkiewicz.github.io",
+			"confidential": false
+		}
+	},
+	{
+		"id": 5,
+		"title": "Some new project",
+		"description": "Have an idea? Get in touch!",
+		"type": "Fullstack",
+		"article": {
+			"image": "",
+			"content": "If you like what you see here give me a call!",
+			"repository": "",
+			"stack": [ "new-project-stack", "new-project-stack", "new-project-stack" ],
+			"url": "",
+			"confidential": false
+		}
+	}
+]

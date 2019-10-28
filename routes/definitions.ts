@@ -32,10 +32,19 @@ export default <Array<PageAttributes>>[
 	{
 		key: 4,
 		renderInContent: true,
-		iconType: 'contacts',
+		iconType: 'idcard',
 		className: 'nav-text',
 		title: 'About me',
 		path: '/about',
 		breadcrumbName: 'About me'
+	},
+	{
+		key: 4,
+		renderInContent: true,
+		iconType: 'contacts',
+		className: 'nav-text',
+		title: 'Contact',
+		path: '/contact',
+		breadcrumbName: 'Contact'
 	}
 ];

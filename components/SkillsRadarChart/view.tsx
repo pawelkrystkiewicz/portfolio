@@ -25,25 +25,27 @@ const NOSSR = dynamic(() => Promise.resolve(NoSsr), {
 // 	]
 // };
 const data = {
-	labels: [ 'Soulution design', 'Database integrations', 'JS Frontend', 'JS Backend', 'Writing documentation' ],
+	labels: [ 'DB integrations', 'JS Frontend', 'JS Backend', 'Documentation' ],
 	legend: { display: false },
 	datasets: [
 		{
 			legend: { display: false },
-			label: 'My First dataset',
+			label: 'Time spent [%]',
 			backgroundColor: 'rgba(179,181,198,0.2)',
 			borderColor: 'rgba(179,181,198,1)',
 			pointBackgroundColor: 'rgba(179,181,198,1)',
 			pointBorderColor: '#fff',
 			pointHoverBackgroundColor: '#fff',
 			pointHoverBorderColor: 'rgba(179,181,198,1)',
-			data: [ 2, 5, 5, 8, 3 ]
+			data: [ 40, 20, 30, 10 ]
 		}
 	]
 };
 export default (props) => (
 	<div className="skill-card-common">
-		<p>Arbitrary classification of proficiency in known technolgies</p>
+		<p>
+			Responsiblities breakdown
+		</p>
 		<NOSSR>
 			<Radar data={data} />
 		</NOSSR>

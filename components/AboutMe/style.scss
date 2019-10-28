@@ -2,12 +2,12 @@ $break-mid: 1000px;
 
 .about-me {
 	@media screen and (max-height: $break-mid) {
-		padding-top: 10px;
+
 		// flex-direction: column;
 	}
 
 	display: flex;
-	padding-top: 100px;
+	padding-top: 10px;
 
 	flex-direction: row;
 	flex-wrap: nowrap;
