@@ -70,7 +70,7 @@
 		"type": "Frontend",
 		"article": {
 			"content": "Committed in October 2018 is a showcase of my beginner's skills at that time. In comparison, it shows how far have I come during last year. I'm proud of the contrast between the two that shows how fast learner I am. And that skill is something you can't underestimate.",
-			"image": "",
+			"image": "/static/img/projects/first_portfolio.png",
 			"repository": "https://github.com/pawelkrystkiewicz/pawelkrystkiewicz.github.io",
 			"stack": [ "js", "css", "html" ],
 			"url": "https://pawelkrystkiewicz.github.io",
