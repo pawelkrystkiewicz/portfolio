@@ -12,7 +12,6 @@ const NOSSR = dynamic(() => Promise.resolve(NoSsr), {
 const data = {
 	resresponsive: true,
 	labels: [ 'Javascript', 'CSS', 'React.js', 'node.js', 'Typescript', 'SQL', 'ETL' ],
-	legend: { display: false, position: 'bottom' },
 	datasets: [
 		{
 			label: 'Arbitrary mark',
@@ -31,7 +30,12 @@ export default (props) => (
 		<p>Proficiency in known technolgies</p>
 
 		<NOSSR>
-			<HorizontalBar data={data} />
+			<HorizontalBar
+				data={data}
+				legend={{
+					display: false
+				}}
+			/>
 		</NOSSR>
 	</div>
 );

@@ -1,7 +1,7 @@
 import { Button, List, Tooltip, Tag } from 'antd';
 import React from 'react';
 import { useMedia } from 'react-use';
-const confidentialWarning = `Any further details of this project are confidential`;
+const confidentialWarning = `This is a commercial projcet. Any further details are confidential`;
 const Warning = () => <span className="project--card-confidential">{confidentialWarning}</span>;
 import projects from './data.json';
 export interface IArticle {
@@ -62,7 +62,10 @@ export default () => {
 							</Button>
 						)}
 						{!!article.repository && [
-							<Tooltip placement="right" title={'Repository'}>
+							<Tooltip
+								placement="right"
+								title={article.confidential ? 'Example repository' : 'Project repository'}
+							>
 								<a href={article.repository} target="blank">
 									<img height={20} src="/static/icons/github.svg" alt={`${title}-repo`} />
 								</a>

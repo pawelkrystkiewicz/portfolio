@@ -26,11 +26,9 @@ const NOSSR = dynamic(() => Promise.resolve(NoSsr), {
 // };
 const data = {
 	labels: [ 'DB integrations', 'JS Frontend', 'JS Backend', 'Documentation' ],
-	legend: { display: false },
 	datasets: [
 		{
-			legend: { display: false },
-			label: 'Time spent [%]',
+			label: 'Amount of responsibilities [%]',
 			backgroundColor: 'rgba(179,181,198,0.2)',
 			borderColor: 'rgba(179,181,198,1)',
 			pointBackgroundColor: 'rgba(179,181,198,1)',
@@ -43,11 +41,21 @@ const data = {
 };
 export default (props) => (
 	<div className="skill-card-common">
-		<p>
-			Responsiblities breakdown
-		</p>
+		<p>Responsiblities breakdown</p>
 		<NOSSR>
-			<Radar data={data} />
+			<Radar
+				legend={{ display: false }}
+				data={data}
+				options={{
+					scale: {
+						ticks: {
+							min: 0,
+							max: 50,
+							beginAtZero: true
+						}
+					}
+				}}
+			/>
 		</NOSSR>
 	</div>
 );

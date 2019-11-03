@@ -1,3 +1,4 @@
+$break-mid: 1000px;
 .welcome-sign--page {
 	width: 100%;
 	height: 100%;
@@ -9,16 +10,16 @@
 }
 
 .welcome-sign--text {
+	@media screen and (max-height: $break-mid) {
+		grid-area: 2 / 2 / 4 / 6;
+		font-size: 23px;
+	}
+
 	grid-area: 2 / 2 / 4 / 4;
 	font-size: 25px;
-	width:auto;
-	.welcome-sign--name {
-	}
-	.welcome-sign--job-title {
-	}
+	width: auto;
 }
-.welcome-sign--particles{
-
+.welcome-sign--particles {
 	grid-area: 2 / 3 / 4 / 5;
 }
 .div1 {
@@ -28,4 +29,8 @@
 }
 .div3 {
 	grid-area: 2 / 2 / 4 / 4;
+}
+
+.welcome-sign--particles_mobile {
+	grid-area: 4 / 2 / 5 / 5;
 }
