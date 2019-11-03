@@ -1,7 +1,7 @@
 import { Button, List, Tooltip, Tag } from 'antd';
 import React from 'react';
 import { useMedia } from 'react-use';
-const confidentialWarning = `This is a commercial projcet. Any further details are confidential`;
+const confidentialWarning = `This is a commercial project. Any further details are confidential`;
 const Warning = () => <span className="project--card-confidential">{confidentialWarning}</span>;
 import projects from './data.json';
 export interface IArticle {
