@@ -79,7 +79,7 @@
 	},
 	{
 		"id": 5,
-		"title": "Some new project",
+		"title": "[Create new project]",
 		"description": "Have an idea? Get in touch!",
 		"type": "Fullstack",
 		"article": {

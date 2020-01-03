@@ -27,17 +27,7 @@ export default () => {
 		<List
 			itemLayout="vertical"
 			size="small"
-			pagination={
-				isWide ? (
-					{
-						position: 'top',
-						pageSize: 3,
-						size: 'small'
-					}
-				) : (
-					undefined
-				)
-			}
+			pagination={undefined}
 			dataSource={projects}
 			renderItem={({ id, title, article, description }) => (
 				<List.Item

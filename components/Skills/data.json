@@ -1,0 +1,18 @@
+[
+	{
+		"title": "Languages",
+		"items": [ { "caption": "Typescript", "icon": "ts" }, { "caption": "Javascript", "icon": "js" } ]
+	},
+	{
+		"title": "Frontend frameworks",
+		"items": [ { "caption": "React.js", "icon": "react" }, { "caption": "Next.js", "icon": "next" } ]
+	},
+	{
+		"title": "Databases",
+		"items": [ { "caption": "PostgreSQL", "icon": "pg" }, { "caption": "SQL Server", "icon": "mssql" } ]
+	},
+	{
+		"title": "Tools",
+		"items": [ { "caption": "Figma", "icon": "figma" }, { "caption": "VS Code", "icon": "vscode" } ]
+	}
+]
