@@ -31,7 +31,7 @@ export default () => {
 				isWide ? (
 					{
 						position: 'top',
-						pageSize: 3,
+						pageSize: 100,
 						size: 'small'
 					}
 				) : (
